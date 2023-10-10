@@ -24,6 +24,7 @@
 - Une discipline est forcément genrée (il n'y a pas de discipline mixte), mais un genre peut ne faire partie d'aucune discipline.
 - Un gymnaste a forcément un genre, mais un genre peut n'être attribué à aucun gymnaste.
 - Un gymnaste peut ne participer à aucune discipline et une discipline peut n'avoir aucun gymnaste.
+- Une note peut n'avoir jamais été effectuée et un gymnaste peut ne pas avoir de notes. Mais si une note est effectuée, elle est forcément dans une catégorie, d'où le `1` dans `Catégorie`.
 - Il y a une composition entre `Discipline` et `Catégorie`. En effet, sans une catégorie, une discipline ne peut pas exister et une catégorie ne peut qu'être dans une discipline.
 - Nous ne passons pas de paramètre à la fonction `podium()` car les notes des gymnastes ainsi que l'inscription (contenant l'évènement) sont atteignables depuis la classe catégorie.
 - Pour la fonction `victoires()` nous passons une catégorie en paramètre afin d'en déduire si le gymnaste est sur le podium ou non.
